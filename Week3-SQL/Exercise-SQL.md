@@ -250,7 +250,8 @@ For this section of the exercise we will be using the `bigquery-public-data.aust
 	```
 
 3. Write a query that, for every station_name, has the amount of trips that started there and the amount of trips that ended there. (Hint, use two temporary tables, one that counts the amount of starts, the other that counts the number of ends, and then join the two.)
-	```	WITH
+	`
+	WITH
   T1 AS (
   SELECT
     start_station_name,
@@ -277,7 +278,7 @@ JOIN
   T2
 ON
   T1.start_station_name = T2.end_station_name
-	```
+	`
 # The next section is the Google Colab section.  
 1. Open up this [this Colab notebook](https://colab.research.google.com/drive/1kHdTtuHTPEaMH32GotVum41YVdeyzQ74?usp=sharing).
 2. Save a copy of it in your drive.
