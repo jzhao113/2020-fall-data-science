@@ -270,16 +270,16 @@ For this section of the exercise we will be using the `bigquery-public-data.aust
   GROUP BY
     end_station_name)
 
-SELECT
-  T1.start_station_name,
-  T1.start_count,
-  T2.end_count
-FROM
-  T1
-JOIN
-  T2
-ON
-  T1.start_station_name = T2.end_station_name
+	SELECT
+  	T1.start_station_name,
+  	T1.start_count,
+  	T2.end_count
+	FROM
+  	T1
+	JOIN
+  	T2
+	ON
+  	T1.start_station_name = T2.end_station_name
 	```
 # The next section is the Google Colab section.  
 1. Open up this [this Colab notebook](https://colab.research.google.com/drive/1kHdTtuHTPEaMH32GotVum41YVdeyzQ74?usp=sharing).
